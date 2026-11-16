@@ -1,8 +1,8 @@
-"""Dashboard N2 - Radar Imobiliario de Goias (IBGE). Gera PNGs (README) e dashboard.html interativo (Plotly)."""
+"""Dashboard N2 - Radar Imobiliario de Goias (IBGE). Gera os PNGs 01-04 do README. Executar da raiz do repositorio. O painel interativo e gerado por dashboard_apresentacao.py."""
 import numpy as np, pandas as pd, matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt, plotly.graph_objects as go
 from plotly.subplots import make_subplots
-df = pd.read_csv("dados_municipios_goias.csv", index_col=0); d = df[df.va_ind>=0].copy()
+df = pd.read_csv("dados/dados_municipios_goias.csv", index_col=0); d = df[df.va_ind>=0].copy()
 d["regiao"] = d.regiao_intermediaria.str.replace(" - .*","",regex=True).str.replace(" de Montes Belos","")
 reg_cor = dict(zip(sorted(d.regiao.unique()), ["#1d5fd6","#0e7a8a","#7c3aed","#b3801e","#c0355a","#0e7a3f"]))
 plt.rcParams.update({"axes.spines.top":False,"axes.spines.right":False,"font.size":10})
@@ -43,4 +43,4 @@ f.add_trace(go.Bar(y=t.nome,x=t.pib_pc_2023/1000,orientation="h",marker_color="#
 cc=c["ln PIB pc"].drop("ln PIB pc").sort_values()
 f.add_trace(go.Bar(y=cc.index,x=cc.values,orientation="h",marker_color=["#c0355a" if v<0 else "#0e7a8a" for v in cc],showlegend=False),2,2)
 f.update_xaxes(type="log",row=1,col=1); f.update_yaxes(type="log",row=1,col=1); f.update_layout(barmode="stack",height=900,title="Radar Imobiliário de Goiás - Dashboard N2 (IBGE)",template="simple_white",legend=dict(orientation="h",y=-.08))
-f.update_layout(**{"barmode":"stack"}); f.write_html("dashboard.html",include_plotlyjs="cdn"); print("ok")
+print("ok")
