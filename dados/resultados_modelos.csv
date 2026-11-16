@@ -1,0 +1,4 @@
+﻿modelo,r2_cv,r2_cv_std,r2_teste,mae_log_teste,rmse_log_teste,mae_reais_teste
+Ridge (linear),0.764,0.067,0.812,0.174,0.241,10143.827
+Random Forest,0.783,0.033,0.875,0.15,0.197,8682.471
+Gradient Boosting,0.807,0.048,0.893,0.133,0.182,8525.355
