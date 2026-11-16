@@ -9,15 +9,15 @@ Pergunta do projeto: **a estrutura econômica de um município goiano explica o 
 ## Estrutura do repositório
 ```
 README.md                  este documento (todos os entregáveis)
-dashboard.html             dashboard interativo (Plotly): abrir no navegador
+dashboard.html             painel de apresentação (Plotly, 7 gráficos): arquivo único, abre no navegador sem internet
 figuras/                   gráficos do dashboard (01-04) e do modelo (05-06)
 dados/dados_municipios_goias.csv   base consolidada (246 linhas)
 dados/resultados_modelos.csv       métricas dos modelos
 dados/importancia_variaveis.csv    importância por permutação
-src/                       scripts: build_data.py, dashboard.py, modelagem.py (+ parse.py)
+src/                       scripts: build_data.py, dashboard.py, dashboard_apresentacao.py, modelagem.py (+ parse.py)
 notebook_N2.ipynb          notebook com todo o fluxo
 ```
-Para reproduzir: `pip install pandas scikit-learn matplotlib plotly` e depois `python src/dashboard.py` e `python src/modelagem.py` (a partir da pasta `dados/`, onde está o CSV).
+Para reproduzir: `pip install pandas scikit-learn matplotlib plotly` e depois `python src/dashboard.py` e `python src/modelagem.py` (a partir da pasta `dados/`, onde está o CSV). O painel `dashboard.html` é gerado por `python src/dashboard_apresentacao.py`, executado a partir da raiz do repositório.
 
 ## R1 — Coleta, tratamento e documentação dos dados
 
@@ -54,7 +54,7 @@ população estimada (tabela 6579), PIB municipal e valor adicionado por setor (
 | log_pop | Logaritmo natural da população 2024 |
 
 ## R2 — Dashboard de visualização
-Interativo: [`dashboard.html`](dashboard.html). Gráficos estáticos abaixo.
+Painel interativo com os números principais, os 4 gráficos abaixo e os 3 gráficos dos modelos: baixe o [`dashboard.html`](dashboard.html) e abra no navegador (funciona sem internet). O GitHub mostra esse arquivo como código. Gráficos estáticos abaixo.
 
 ![Estrutura econômica](figuras/02_estrutura_economica_regiao.png)
 ![População x PIB per capita](figuras/01_populacao_x_pib_per_capita.png)
