@@ -1,8 +1,7 @@
 # Radar Imobiliário de Goiás — Projeto Final N2 (Big Data e Data Science)
 
 **FATESG · Tecnologia em Inteligência Artificial · 2026/02**
-**Integrantes do grupo:** Hugo Flávio Vilhena, Ricardo César Santana e Ana Maria Lima Quartiero
-**Professor:** Reinaldo de Souza Júnior · **Entrega/apresentação:** 17/11/2026
+**Aluno:** Hugo Flávio Vilhena · **Professor:** Reinaldo de Souza Júnior · **Entrega/apresentação:** 17/11/2026
 
 Pergunta do projeto: **a estrutura econômica de um município goiano explica o poder de compra por habitante (PIB per capita), um sinal de demanda para o mercado imobiliário?** Usamos dados públicos do IBGE dos 246 municípios de Goiás, um dashboard com 4 gráficos e três modelos de regressão comparados.
 
