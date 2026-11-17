@@ -25,7 +25,7 @@ Para reproduzir, a partir da raiz do repositório: `pip install pandas scikit-le
 ## R1 — Coleta, tratamento e documentação dos dados
 
 **Fonte:** IBGE (Sidra / API de dados agregados), organizados na N1 em 7 tabelas relacionais (PostgreSQL) e consolidadas aqui em uma linha por município:
-população estimada (tabela 6579), PIB municipal e valor adicionado por setor (tabela 5938) e domicílios do Censo 2022 (tabela 4712). Recorte: 246 municípios, 6 regiões intermediárias e 22 imediatas de Goiás.
+população estimada ([tabela 6579](https://sidra.ibge.gov.br/tabela/6579)), PIB municipal e valor adicionado por setor ([tabela 5938](https://sidra.ibge.gov.br/tabela/5938)) e domicílios do Censo 2022 ([tabela 4712](https://sidra.ibge.gov.br/tabela/4712)). Recorte: 246 municípios, 6 regiões intermediárias e 22 imediatas de Goiás.
 
 **Resumo analítico.** Municípios que dependem da administração pública (prefeituras, escolas e hospitais públicos) tendem a ter PIB per capita baixo; os que têm indústria, agro e serviços privados fortes tendem a ter PIB per capita alto. Para um corretor ou uma imobiliária, isso indica onde há renda para sustentar aluguel e venda. O estudo mede o quanto dá para prever o PIB per capita só pela estrutura econômica e pelo tamanho do município.
 
