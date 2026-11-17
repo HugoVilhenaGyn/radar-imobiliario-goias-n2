@@ -57,6 +57,8 @@ população estimada ([tabela 6579](https://sidra.ibge.gov.br/tabela/6579)), PIB
 | log_pop | Logaritmo natural da população 2024 |
 
 ## R2 — Dashboard de visualização
+**Painel online: https://hugovilhenagyn.github.io/radar-imobiliario-goias-n2/dashboard.html**
+
 Painel interativo com os números principais, os 4 gráficos abaixo e os 9 gráficos dos modelos: baixe o [`dashboard.html`](dashboard.html) e abra no navegador (funciona sem internet). O GitHub mostra esse arquivo como código. Gráficos estáticos abaixo.
 
 ![Estrutura econômica](figuras/02_estrutura_economica_regiao.png)
